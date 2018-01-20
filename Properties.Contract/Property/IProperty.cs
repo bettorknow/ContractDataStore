@@ -1,8 +1,9 @@
-﻿using System;
+﻿using Properties.Contract.Address;
 
-namespace Properties.Contract
+namespace Properties.Contract.Property
 {
-    public class Class1
+    public interface IProperty
     {
+        IPostalAddress PostalAddress { get; }
     }
 }
