@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Properties.Contract.Property;
 
 namespace Library.DataAccess.Contract
 {
     public interface IPropertyQueries
     {
-        IProperty GetSinglePropertyMatch(IProperty propertyCriteria);
-        IEnumerable<IProperty> GetPropertyMatches(IProperty propertyCriteria);
-        IEnumerable<IProperty> GetAllProperties(IProperty propertyCriteria, int maxResults = 100);
+        Task<IProperty> GetSinglePropertyMatch(IProperty propertyCriteria);
+        Task<IEnumerable<IProperty>> GetPropertyMatches(IProperty propertyCriteria);
+        Task<IEnumerable<IProperty>> GetAllProperties(IProperty propertyCriteria, int maxResults = 100);
     }
 }

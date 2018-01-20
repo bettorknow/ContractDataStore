@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Library.Address.Contract\Library.Address.Contract.csproj" />
+    <ProjectReference Include="..\Library.DataAccess.Contract\Library.DataAccess.Contract.csproj" />
   </ItemGroup>
 
 </Project>

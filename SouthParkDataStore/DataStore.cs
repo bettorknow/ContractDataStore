@@ -20,5 +20,15 @@ namespace SouthParkDataStore
         {
             _properties.Add(new Property(new CartmanResidence()));
         }
+
+        public List<IProperty> Where(Func<IProperty, bool> predicate)
+        {
+            return _properties.Where(predicate).ToList();
+        }
+
+        public List<IProperty> ToList()
+        {
+            return _properties;
+        }
     }
 }

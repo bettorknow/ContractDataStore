@@ -4,7 +4,7 @@ using Properties.Contract.Property;
 
 namespace SouthParkDataStore
 {
-    public class Property : IProperty
+    internal class Property : IProperty
     {
         public Property(IPostalAddress postalAddress)
         {
